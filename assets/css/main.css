@@ -2107,6 +2107,44 @@ button,
         right: -0.5em;
         top: 0; } }
 
+/* inlinefooter */
+#inlinefooter {
+  display: -moz-flex;
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+  border-top: solid 5px #f56a6a;
+  padding: 1em 0 1em 0;
+  position: relative; }
+  #inlinefooter > * {
+    -moz-flex: 1;
+    -webkit-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+    margin-bottom: 0; }
+  #inlinefooter .logo {
+    border-bottom: 0;
+    color: inherit;
+    font-family: "Roboto Slab", serif;
+    font-size: 1.125em; }
+  #inlinefooter .icons {
+    text-align: right; }
+  @media screen and (max-width: 1680px) {
+    #inlinefooter {
+      padding-top: 1em; } }
+  @media screen and (max-width: 736px) {
+    #inlinefooter {
+      padding-top: 1.5em; }
+      #inlinefooter .logo {
+        font-size: 1.25em;
+        margin: 0; }
+      #inlinefooter .icons {
+        height: 5em;
+        line-height: 5em;
+        position: absolute;
+        right: -0.5em;
+        top: 0; } }
+
 /* Banner */
 #banner {
   padding: 6em 0 4em 0 ;
