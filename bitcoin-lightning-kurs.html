@@ -163,6 +163,7 @@
 											<!--<li><a href="">Individuelle Vertiefungs- und Firmenkurse</a></li>-->
 										</ul>
 									</li>
+									<li><a href="bitcoin-produkte.html">Bitcoin Produkte</a></li>
 									<li><a href="donations.html">Donations</a></li>
 									<li><a href="impressum.html">Impressum</a></li>
 									<li><a href="agb.html">AGB</a></li>
@@ -222,36 +223,6 @@
 									<li class="icon solid fa-home">Bitcoin-Mentoring GmbH<br />
 									Röslistr. 40<br />8006 Zürich</li>
 								</ul>
-							</section>
-							<section>
-								<header class="major">
-									<h2>Donations</h2>
-								</header>
-								<style type="text/css"> .btcpay-form { display: inline-flex; align-items: center; justify-content: center; } .btcpay-form--inline { flex-direction: row; } .btcpay-form--block { flex-direction: column; } .btcpay-form .btcpay-custom-container{ text-align: center; }.btcpay-custom { display: flex; align-items: center; justify-content: center; } .btcpay-form .plus-minus { cursor:pointer; font-size:25px; line-height: 25px; background: #DFE0E1; height: 30px; width: 45px; border:none; border-radius: 7px; margin: auto 5px; display: inline-flex; justify-content: center; } .btcpay-form select { padding: 1px; cursor: pointer; margin-top: 10px; margin-bottom: 10px; } .btcpay-form select:hover { border-color: #ccc; } #btcpay-input-price { -moz-appearance: none; -webkit-appearance: none; border: none; box-shadow: none; text-align: center; font-size: 25px; margin: auto; border-radius: 5px; line-height: 35px; background: #fff; } #btcpay-input-price::-webkit-outer-spin-button, #btcpay-input-price::-webkit-inner-spin-button { -webkit-appearance: none; margin: 0; } </style>
-							
-								<form method="POST" action="https://pay.bitcoin-mentoring.me/api/v1/invoices" class="btcpay-form btcpay-form--block">
-									<input type="hidden" name="storeId" value="3MHr2HDdLYPWuvkwjJYfdfipwhPTb5WVva9z8Ezo7nSr" />
-									<input type="hidden" name="browserRedirect" value="https://bitcoin-mentoring.me" />
-									<input type="hidden" name="notifyEmail" value="hello@bitcoin-mentoring.me" />
-									<div class="btcpay-custom-container">
-									  <div class="btcpay-custom">
-										<button class="plus-minus" onclick="event.preventDefault(); var el=document.querySelector('#btcpay-input-price'); var price = parseInt(el.value); if((price - 1 )< 1) { el.value = 1} else {el.value = parseInt(el.value) - 1 }">-</button>
-										<input id="btcpay-input-price" name="price" type="number" min="1" max="200" step="1" value="1" style="width: 2em;" oninput="event.preventDefault();isNaN(event.target.value)? document.querySelector('#btcpay-input-price').value = 1 : event.target.value; if (this.value < 1) {this.value = 1; } else if(this.value > 200){  this.value = 200;}"  />
-										<button class="plus-minus" onclick="event.preventDefault(); var el=document.querySelector('#btcpay-input-price'); var price = parseInt(el.value); if((price + 1 )> 200) { el.value = 200} else {el.value = parseInt(el.value) + 1 }">+</button>
-									  </div>
-									  <select name="currency">
-										  <option value="CHF">CHF</option>
-										  <option value="BTC">BTC</option>
-										  <option value="SATS">SATS</option>
-										  <option value="USD">USD</option>
-										  <option value="EUR">EUR</option>
-										  
-										</select>
-									  
-									  
-									</div>
-									<input type="image" class="submit" name="submit" src="https://pay.bitcoin-mentoring.me/img/paybutton/pay.svg" style="width:146px;cursor:pointer;" alt="Pay with BtcPay, Self-Hosted Bitcoin Payment Processor">
-								  </form>
 							</section>
 
 						<!-- Footer -->
