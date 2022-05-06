@@ -1,0 +1,255 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>Bitcoin Lightning Node Operator Kurs</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<!-- Global site tag (gtag.js) - Google Analytics -->
+		<script async src="https://www.googletagmanager.com/gtag/js?id=G-F2KS8H79DB"></script>
+		<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'G-F2KS8H79DB');
+		</script>
+	</head>
+	<body class="is-preload">
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Main -->
+					<div id="main">
+						<div class="inner">
+
+							<!-- Header -->
+							<header id="header">
+								<a href="index.html" class="logo"><strong>Bitcoin Lightning Kurs</strong></a>
+								<!-- <ul class="icons">
+                                    <li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
+                                    <li><a href="https://www.linkedin.com/company/bitcoin-mentoring-gmbh/" class="icon brands fa-linkedin" target="_blank"><span class="label">Facebook</span></a></li>
+                                    <li><a href="https://www.facebook.com/groups/361076645112457" target="_blank" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
+                                    <li><a href="https://www.instagram.com/bitcoin_mentor_me/" target="_blank" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
+                                    <li><a href="https://www.meetup.com/de-DE/bitcoin-4-beginners-meetup-zurich" target="_blank" class="icon brands fa-medium-m"><span class="label">Meetup</span></a></li>
+                                </ul> -->
+							</header>
+
+							<!-- Content -->
+								<section>
+									<header class="main">
+										<h1>Bitcoin Lightning Node einrichten</h1>
+									</header>
+
+									<span class="image main"><img src="images/bitcoin_lightning-node-operator.webp" alt="" /></span>
+									<h2>Lightning Node einrichten und syncen</h2>
+									<p>
+										Jeder kennt es, man kauft sich Hardware (z.B. einen <a href="https://www.raspberrypi.org/" target="_blank">Raspberry Pi</a>) und versucht nun einen Lightning / Bitcoin Node darauf aufzusetzen. Doch wie funktioniert das genau? Was ist eine SSH Verbindung? Wie kriege ich das Betriebssystem auf den Raspberry Pi? Aus was muss ich beim Einrichten genau achten?
+									</p>
+									
+										<p>In diesem online Kurs werden wir euch durch den Jungle der Lightning Fullnodes führen. Folgende Themen werden im Kurs beinhaltet sein:</p>
+										<ul>
+											<li>Hardware Zusammenbau</li>
+											<li><a href="https://github.com/rootzoll/raspiblitz" target="_blank">Raspiblitz OS</a> auf die SD Karte flashen</li>
+											<li>Einrichtung der Lightning Node</li>
+											<li>Start des Blockdownloads</li>
+										</ul>
+										<p>In diesem Kurs werden wir das Einrichten der Lightning Node mit Raspiblitz zusammen durchführen. Damit gleich mitgemacht werden kann, sollte die Hardware bereits im Vorfeld gekauft worden und bereit für die Installation sein. Dafür haben wir hier eine Einkaufsliste zusammengestellt:</p>
+										<ul>
+											<li><a href="https://www.amazon.com/dp/B07TC2BK1X?keywords=raspberry%20pi%204%204gb&geniuslink=true" target="_blank">Raspberry Pi</a></li>
+											<li><a href="https://www.digitec.ch/de/s1/product/raspberry-pi-official-raspberry-pi-4-power-adapter-netzteil-elektronikzubehoer-gehaeuse-11268330" target="_blank">Raspbbery Power Netzteil (Achtung: Auf richtiges Land achten!)</a></li>
+											<li><a href="https://www.digitec.ch/de/s1/product/samsung-870-evo-1000-gb-25-ssd-14598791?supplier=406802" target="_blank">Externe SSD Festplatte 1TB</a></li>
+											<li><a href="https://www.amazon.com/UGREEN-Hard-Drive-Enclosure-5Gbps/dp/B0963DTVLQ/ref=sr_1_1_sspa?geniuslink=true&keywords=ugreen+hard+drive+enclosure+2+5+inch+usb+3+0+external+enclosure+uasp+usb+3+0+hard+drive+enclosure+for+2+5+inch+sata+ssd+and+hdd+in+height+9+5+mm+7+mm+usb+case+with+usb+3+0+cable+tool+free+installation&qid=1651852671&sr=8-1-spons&psc=1&spLa=ZW5jcnlwdGVkUXVhbGlmaWVyPUExTEJEU0o4V09OSTVDJmVuY3J5cHRlZElkPUEwMzc0MjM0MTQ4WjQ1Mk9FUzVDTiZlbmNyeXB0ZWRBZElkPUEwNjE0Mjk4M1FYOUwxU0xRWkdIRSZ3aWRnZXROYW1lPXNwX2F0ZiZhY3Rpb249Y2xpY2tSZWRpcmVjdCZkb05vdExvZ0NsaWNrPXRydWU=" target="_blank">Sata zu USB Adapter</a></li>
+											<li><a href="https://www.amazon.com/dp/B07CY3QSST?geniuslink=true" target="_blank">Samsung SD Karte 32 GB</a></li>
+											<li><a href="https://www.digitec.ch/de/s1/product/sertronics-flirc-gehaeuse-elektronikzubehoer-gehaeuse-12241821?ip=flirc" target="_blank">Raspberry Gehäuse</a></li>
+										</ul>
+									<hr class="major" />
+									<div class="row">
+										<div class="col-6 col-12-small">
+											<h2>Lernziele</h2>
+											<p>Nach diesem Kurs verstehst du wie du einen Lightning / Bitcoin Node einrichten kannst. Die Blockchain wird heruntergeladen und der Lightning Node ist eingerichtet.</p>
+										</div>
+										
+										<div class="col-6 col-12-small">
+											<h2>Zielgruppe</h2>
+											<p>Technik interessierte, die gerne selber zu Hause einen Node betreiben wollen.</p>
+										</div>
+
+										
+										
+										<div class="col-6 col-12-small">
+											<h2>Voraussetzung</h2>
+											<ul class="alt">
+												<li>Hardware wurde gekauft und liegt zur Installation bereit.</li>
+											
+										
+											</ul>
+										</div>
+
+										<div class="col-6 col-12-small">
+											<h2>Veranstaltungsort</h2>
+											<p>
+												Dieser Kurs wird online über die Opensource Plattform <a href="https://jitsi.org/" target="_blank">Jitsi</a> durchgeführt. Der Zugangsalink erhalten Sie nach der Anmeldung.
+												</p>
+										</div>
+
+										
+									</div>
+									
+									<br>
+									<blockquote><h4>Not your Node, not your rules!<br /><a href="https://twitter.com/rootzoll" class="icon brands fa-twitter" target="_blank"><span class="label">Twitter</span> Rootzoll</a></h4></blockquote>
+
+									<hr class="major" />
+									<div class="row">
+										
+
+										<div class="col-6 col-12-small">
+										<h2>Kursdaten</h2>
+												<ul class="alt">
+													<li><strong>Online:</strong> Mo. 16. Mai 2022 um 18:00 - 20:00 Uhr, 2 Stunden</li>
+													<!--<li><del>Montag, 21. Februar 2022 um 19:00 - 22:00 Uhr in Zürich, 3 Stunden</del></li>-->
+													<li>weitere individuelle Kursdaten auf Anfrage. Wir kommen auch gerne vorbei!</li>	
+													<li></li>
+												</ul>
+											<p><a class="button big primary large" href="mailto:&#104;&#101;&#x6C;&#x6C;&#x6F;&#64;&#x62;&#x69;&#116;&#x63;&#x6F;&#105;&#110;&#x2D;&#x6D;&#x65;&#x6E;&#116;&#x6F;&#x72;&#x69;&#110;&#103;&#x2E;&#109;&#x65;">Anmeldung: <span style="unicode-bidi:bidi-override; direction: rtl;">&#x65;&#x6D;&#46;&#x67;&#110;&#x69;&#114;&#x6F;&#116;&#110;&#101;&#109;&#x2D;&#x6E;&#105;&#111;&#x63;&#x74;&#105;&#98;&#64;&#111;&#x6C;&#108;&#x65;&#x68;</span></a>
+											</p>
+										</div>
+
+										<div class="col-6 col-12-small">
+											<h2>Preis</h2>
+											<ul class="alt">
+												<li>CHF 100.–</li>
+												<li>Bei Bezahlung in Bitcoin gibt es 10% Rabatt!</li>
+												<li></li>
+											</ul>
+										</div>
+									</div>
+								
+								<!-- inlinefooter -->
+								
+								<div id="inlinefooter" >
+									<ul class="icons">
+										<!--<li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>-->
+										<li><a href="https://www.linkedin.com/company/bitcoin-mentoring-gmbh/" class="icon brands fa-linkedin" target="_blank"><span class="label">Facebook</span></a></li>
+										<li><a href="https://www.facebook.com/groups/361076645112457" target="_blank" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
+										<li><a href="https://www.instagram.com/bitcoin_mentor_me/" target="_blank" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
+										<li><a href="https://www.meetup.com/de-DE/bitcoin-4-beginners-meetup-zurich" target="_blank" class="icon brands fa-medium-m"><span class="label">Meetup</span></a></li>
+									</ul>
+								</div>
+
+								</section>
+
+						</div>
+					</div>
+
+				<!-- Sidebar -->
+				<div id="sidebar">
+					<div class="inner">
+
+						<!-- Search -->
+							<!-- <section id="search" class="alt">
+								<form method="post" action="#">
+									<input type="text" name="query" id="query" placeholder="Search" />
+								</form>
+							</section> -->
+
+						<!-- Menu -->
+							<nav id="menu">
+								<header class="major">
+									<h2>Menu</h2>
+								</header>
+								<ul>
+									<li><a href="index.html">Home</a></li>
+									<li>
+										<span class="opener active">Kurse</span>
+										<ul>
+											<li><a href="bitcoin-kaufen-kurs.html">Bitcoin Investment</a></li>
+											<li><a href="bitcoin-hardware-wallet-kurs.html">Bitcoin Hardware Wallet</a></li>
+											<li><a href="blockchain-kurs.html">Blockchain</a></li>
+											<li><a href="bitcoin-lightning-kurs.html" class="toggle">Lightning Netzwerk</a></li>
+											<!--<li><a href="">Individuelle Vertiefungs- und Firmenkurse</a></li>-->
+										</ul>
+									</li>
+									<li><a href="bitcoin-produkte.html">Bitcoin Produkte</a></li>
+									<li><a href="donations.html">Donations</a></li>
+									<li><a href="impressum.html">Impressum</a></li>
+									<li><a href="agb.html">AGB</a></li>
+									<!-- <li><a href="generic.html">Generic</a></li>
+									<li><a href="elements.html">Elements</a></li>
+									
+									<li><a href="#">Etiam Dolore</a></li>
+									<li><a href="#">Adipiscing</a></li>
+									<li>
+										<span class="opener">Another Submenu</span>
+										<ul>
+											<li><a href="#">Lorem Dolor</a></li>
+											<li><a href="#">Ipsum Adipiscing</a></li>
+											<li><a href="#">Tempus Magna</a></li>
+											<li><a href="#">Feugiat Veroeros</a></li>
+										</ul>
+									</li>
+									<li><a href="#">Maximus Erat</a></li>
+									<li><a href="#">Sapien Mauris</a></li>
+									<li><a href="#">Amet Lacinia</a></li> -->
+								</ul>
+							</nav>
+
+						<!-- Section -->
+							<!-- <section>
+								<header class="major">
+									<h2>Ante interdum</h2>
+								</header>
+								<div class="mini-posts">
+									<article>
+										<a href="#" class="image"><img src="images/pic07.jpg" alt="" /></a>
+										<p>Aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore aliquam.</p>
+									</article>
+									<article>
+										<a href="#" class="image"><img src="images/pic08.jpg" alt="" /></a>
+										<p>Aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore aliquam.</p>
+									</article>
+									<article>
+										<a href="#" class="image"><img src="images/pic09.jpg" alt="" /></a>
+										<p>Aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore aliquam.</p>
+									</article>
+								</div>
+								<ul class="actions">
+									<li><a href="#" class="button">More</a></li>
+								</ul>
+							</section> -->
+
+						<!-- Section -->
+							<section>
+								<header class="major">
+									<h2>Kontakt</h2>
+								</header>
+								<p>Wir freuen uns auf euch:</p>
+								<ul class="contact">
+									<li class="icon solid fa-envelope"><a class="button big" href="mailto:&#104;&#101;&#x6C;&#x6C;&#x6F;&#64;&#x62;&#x69;&#116;&#x63;&#x6F;&#105;&#110;&#x2D;&#x6D;&#x65;&#x6E;&#116;&#x6F;&#x72;&#x69;&#110;&#103;&#x2E;&#109;&#x65;"><span style="unicode-bidi:bidi-override; direction: rtl;">&#x65;&#x6D;&#46;&#x67;&#110;&#x69;&#114;&#x6F;&#116;&#110;&#101;&#109;&#x2D;&#x6E;&#105;&#111;&#x63;&#x74;&#105;&#98;&#64;&#111;&#x6C;&#108;&#x65;&#x68;</span></a></li>
+									<li class="icon solid fa-phone"><a href="tel:&#x30;&#x37;&#56;&#50;&#x31;&#x35;&#x35;&#53;&#x31;&#55;"><span style="unicode-bidi:bidi-override; direction: rtl;">&#x37;&#x31;&#x35;&#53;&#x35;&#49;&#x32;&#x38;&#55;(&#48;) 14+</span></a></li>
+									<li class="icon solid fa-home">Bitcoin-Mentoring GmbH<br />
+									Röslistr. 40<br />8006 Zürich</li>
+								</ul>
+							</section>
+
+						<!-- Footer -->
+							<!-- <footer id="footer">
+								<p class="copyright">&copy; Untitled. All rights reserved. Demo Images: <a href="https://unsplash.com">Unsplash</a>. Design: <a href="https://html5up.net">HTML5 UP</a>.</p>
+							</footer> -->
+
+					</div>
+				</div>
+
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
